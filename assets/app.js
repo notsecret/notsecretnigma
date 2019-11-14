@@ -126,6 +126,12 @@ var app0 = new Vue({
 			return res;
 		},
 		
+	},
+	methods: {
+		input_answer_input: function (event) {
+			var t=document.getElementById('secretapp-input').value;
+			this.input_answer=t;
+		}
 	}
 });
 Vue.component('indicator', {
