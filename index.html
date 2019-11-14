@@ -12,7 +12,7 @@
 	<div :class="{'secretapp-inner':true,'show':!state5}">
 		<img src="assets/nigma-velikolepen.jpg" alt="кто-то великолепен" title="кто-то великолепен" class="main-image"><br>
 		Ключевая фраза:
-		<input v-model="input_answer" id="secretapp-input"><br>
+		<input v-model="input_answer" v-on:input="input_answer_input" id="secretapp-input"><br>
 		
 		<div class="hint-wrapper">
 			<button></button>
